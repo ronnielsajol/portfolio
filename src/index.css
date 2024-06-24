@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply font-sans bg-background text-textColor w-full h-full;
+}
+
+@layer components {
+	button.btn {
+		@apply text-textColor border-solid rounded-xl text-xl;
+	}
+
+	button.hero {
+		@apply w-44 h-12;
+	}
+
+	button.primary {
+		@apply px-[15px] py-[8px] bg-primary font-semibold;
+	}
+
+	button.secondary {
+		@apply px-[15px] py-[8px] bg-textColor text-primary border-[4px] border-secondary;
+	}
+
+	h1.gradient-hero {
+		@apply bg-gradient-to-r from-primary from-50% to-accent to-100% bg-clip-text text-transparent;
+	}
+
+	.gradient2 {
+		@apply bg-gradient-to-r from-primary from-30% to-accent to-80% bg-clip-text text-transparent;
+	}
+}
