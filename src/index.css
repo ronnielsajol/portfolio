@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 html {
-	@apply font-sans bg-background text-textColor w-full h-full;
+ @apply h-[2610px] w-full scroll-smooth bg-background font-sans text-textColor;
 }
 
 @layer components {
-	button.btn {
-		@apply px-[15px] py-[8px] text-textColor border-solid rounded-xl text-xl;
-	}
+ button.btn {
+  @apply rounded-xl border-solid px-[15px] py-[8px] text-xl text-textColor;
+ }
 
-	button.hero {
-		@apply w-44 h-12;
-	}
+ button.hero {
+  @apply h-12 w-44;
+ }
 
-	button.primary {
-		@apply bg-primary font-normal;
-	}
+ button.primary {
+  @apply bg-primary font-normal;
+ }
 
-	button.secondary {
-		@apply bg-textColor text-primary border-[4px] border-secondary font-medium text-[18px];
-	}
+ button.secondary {
+  @apply border-[4px] border-secondary bg-textColor text-[18px] font-medium text-primary;
+ }
 
-	h1.gradient-hero {
-		@apply bg-gradient-to-r from-primary from-50% to-accent to-100% bg-clip-text text-transparent;
-	}
+ h1.gradient-hero {
+  @apply bg-gradient-to-r from-primary from-50% to-accent to-100% bg-clip-text text-transparent;
+ }
 
-	.gradient2 {
-		@apply bg-gradient-to-r from-primary from-30% to-accent to-80% bg-clip-text text-transparent;
-	}
+ .gradient2 {
+  @apply bg-gradient-to-r from-primary from-30% to-accent to-80% bg-clip-text text-transparent;
+ }
 }

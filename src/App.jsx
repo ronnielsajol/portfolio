@@ -1,15 +1,16 @@
-import "./App.css";
-import "@fontsource/poppins";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
+import '@fontsource/poppins'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
+import Experience from './Components/Experience'
 
 function App() {
-	return (
-		<>
-			<Navbar />
-			<Hero />
-		</>
-	);
+ return (
+  <>
+   <Navbar />
+   <Hero />
+   <Experience />
+  </>
+ )
 }
 
-export default App;
+export default App
