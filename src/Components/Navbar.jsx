@@ -3,24 +3,32 @@ import logo from "/ron.dev.png";
 
 function navbar() {
 	return (
-		<div className='flex justify-between mx-10 my-8 content-center'>
-			<div className='ml-[120px]'>
+		<nav className='flex justify-between mx-20 ml-40  my-8 content-center'>
+			<div>
 				<img src={logo} alt='ron.dev' />
 			</div>
 			<div>
 				<ul className='w-[340px] flex justify-between items-center'>
 					<li>
-						<Button>About</Button>
+						<Button>
+							<a href='#About'>About</a>
+						</Button>
 					</li>
 					<li>
-						<Button>Experience</Button>
+						<Button>
+							<a href='#Experience'>Experience</a>
+						</Button>
 					</li>
 					<li>
-						<Button primary={true}>Résumé</Button>
+						<Button primary={true}>
+							<a href='/SAJOL_RESUME.pdf' target='_blank'>
+								Résumé
+							</a>
+						</Button>
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	);
 }
 export default navbar;

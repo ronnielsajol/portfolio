@@ -8,7 +8,7 @@ html {
 
 @layer components {
 	button.btn {
-		@apply text-textColor border-solid rounded-xl text-xl;
+		@apply px-[15px] py-[8px] text-textColor border-solid rounded-xl text-xl;
 	}
 
 	button.hero {
@@ -16,11 +16,11 @@ html {
 	}
 
 	button.primary {
-		@apply px-[15px] py-[8px] bg-primary font-semibold;
+		@apply bg-primary font-normal;
 	}
 
 	button.secondary {
-		@apply px-[15px] py-[8px] bg-textColor text-primary border-[4px] border-secondary;
+		@apply bg-textColor text-primary border-[4px] border-secondary font-medium text-[18px];
 	}
 
 	h1.gradient-hero {

@@ -1,38 +1,47 @@
-import hero from "/hero.jpg";
-import Button from "./Button";
-import git from "/github.svg";
+import Button from './Button'
+import git from '/github 1.png'
 
 const Hero = () => {
-	return (
-		<>
-			<div className='ml-[160px] my-[110px]'>
-				<div className=''>
-					<p className='text-slate-200 text-2xl'>Hi! My name is</p>
-					<h1 className='w-fit text-slate-200 text-7xl font-bold leading-relaxed gradient-hero'>Ronniel Sajol.</h1>
-					<h1 className='w-fit text-slate-200 text-7xl '>
-						<span className='font-medium'>I&apos;m a </span>
-						<span className='font-bold leading-relaxed gradient2'>Web Developer</span>
-					</h1>
-					<p className='w-[490px] leading-8 text-base'>
-						I build dynamic, responsive web applications and create user-friendly interfaces. With a passion for clean code and
-						modern design, I aim to deliver seamless user experiences.
-					</p>
-					<div className='mt-5 flex justify-between w-96'>
-						<Button primary={true} style={"hero"}>
-							Hire Me!
-						</Button>
-						<Button secondary={true} style={"hero"}>
-							<div className='flex items-center justify-evenly'>
-								<img src={git} alt='Git Icon' className='w-6 h-6 text-primary' />
-								My Projects
-							</div>
-						</Button>
-					</div>
-				</div>
-				<div>{/* <img src={hero} alt='Hero' className='w-[405px] h-[505px] rounded-bl-[169px]' /> */}</div>
-			</div>
-		</>
-	);
-};
+ return (
+  <>
+   <main className="mx-20 my-28 ml-40 flex justify-between" id="About">
+    <div>
+     <h4 className="text-2xl text-slate-200">Hi! My name is</h4>
+     <h1 className="gradient-hero w-fit text-7xl font-bold leading-relaxed text-slate-200">
+      Ronniel Sajol.
+     </h1>
+     <h1 className="w-fit text-7xl text-slate-200">
+      <span className="font-medium">I&apos;m a </span>
+      <span className="gradient2 font-bold leading-relaxed">Web Developer</span>
+     </h1>
+     <p className="w-[490px] text-base leading-8">
+      I build dynamic, responsive web applications and create user-friendly
+      interfaces. With a passion for clean code and modern design, I aim to
+      deliver seamless user experiences.
+     </p>
+     <div className="mt-5 flex w-96 justify-between">
+      <Button primary={true} style={'hero shadow-md shadow-[#4e4d5f]'}>
+       <a href="mailto:sajolronniel28@gmail.com">Hire Me!</a>
+      </Button>
+      <Button secondary={true} style={'hero'}>
+       <a
+        className="flex items-center gap-2"
+        href="https://github.com/ronnielsajol"
+        target="_blank"
+       >
+        <img src={git} alt="Github Icon" className="h-6 w-6" />
+        My Projects
+       </a>
+      </Button>
+     </div>
+    </div>
+    <div className="relative h-[532px] w-[427.23px]">
+     <div className="absolute left-[21px] top-0 h-[505px] w-[405px] rounded-bl-[170px] bg-accent blur-[18.40px]"></div>
+     <div className="absolute left-0 top-6 h-[505px] w-[405px] rounded-bl-[170px] bg-hero bg-cover bg-center bg-no-repeat"></div>
+    </div>
+   </main>
+  </>
+ )
+}
 
-export default Hero;
+export default Hero

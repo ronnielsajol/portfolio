@@ -13,7 +13,10 @@ export default {
 				secondary: "#817EBB",
 				accent: "#7CF4B3",
 			},
+			backgroundImage: {
+				hero: "url('/hero.jpg')",
+			},
 		},
 	},
-	plugins: [],
+	plugins: ["prettier-plugin-tailwindcss"],
 };
