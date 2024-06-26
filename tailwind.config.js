@@ -3,6 +3,28 @@ export default {
  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
  theme: {
   extend: {
+   keyframes: {
+    punch: {
+     '0%': { transform: 'translateY(0)' },
+     '30%': { transform: 'translateY(-150px)' },
+     '100%': { transform: 'translateY(0)' },
+    },
+    split1: {
+     '0%': { transform: 'translateX(0)' },
+     '30%': { transform: 'translateX(-50px)' },
+     '100%': { transform: 'translateX(0)' },
+    },
+    split2: {
+     '0%': { transform: 'translateX(0)' },
+     '30%': { transform: 'translateX(50px)' },
+     '100%': { transform: 'translateX(0)' },
+    },
+   },
+   animation: {
+    punch: 'punch 0.5s ease-in-out',
+    split1: 'split1 0.5s ease-in-out',
+    split2: 'split2 0.5s ease-in-out',
+   },
    fontFamily: {
     sans: ['Poppins', 'sans-serif'],
    },

@@ -6,7 +6,9 @@ function Navbar() {
   <nav className="sticky top-0 z-50 bg-background py-1">
    <div className="flex h-16 items-center justify-between py-8 pl-40 pr-20">
     <div>
-     <img src={logo} alt="ron.dev" />
+     <a href="/">
+      <img src={logo} alt="ron.dev" />
+     </a>
     </div>
     <div>
      <ul className="flex items-center space-x-6">
@@ -25,9 +27,7 @@ function Navbar() {
         primary={true}
         style={'hover:text-accent transition-all duration-300'}
        >
-        <a href="/SAJOL_RESUME.pdf" target="_blank">
-         Résumé
-        </a>
+        <a href="#Resume">Résumé</a>
        </Button>
       </li>
      </ul>

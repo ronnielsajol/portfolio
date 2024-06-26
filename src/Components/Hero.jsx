@@ -40,8 +40,8 @@ const Hero = () => {
       </Button>
      </div>
     </div>
-    <div className="relative h-[532px] w-[427.23px] sm:invisible lg:visible">
-     <div className="absolute left-[21px] top-0 h-[505px] w-[405px] rounded-bl-[170px] bg-accent blur-[18.40px]"></div>
+    <div className="group relative h-[532px] w-[427.23px] sm:invisible lg:visible">
+     <div className="absolute left-0 top-6 h-[505px] w-[405px] animate-pulse rounded-bl-[170px] bg-accent blur-[18.40px] transition-all duration-500 group-hover:left-[21px] group-hover:top-0"></div>
      <div className="absolute left-0 top-6 h-[505px] w-[405px] rounded-bl-[170px] bg-hero bg-cover bg-center bg-no-repeat"></div>
     </div>
    </main>
