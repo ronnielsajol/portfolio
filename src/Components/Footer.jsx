@@ -32,7 +32,6 @@ const Footer = () => {
  return (
   <footer className="mt-52 flex flex-col items-center justify-center">
    <div className="flex items-center justify-center gap-4">
-    {/* Left side of the div */}
     <div
      className={`flex items-center justify-center gap-4 ${isPunching ? 'animate-split1' : ''}`}
     >
@@ -43,7 +42,6 @@ const Footer = () => {
       ))}
     </div>
 
-    {/* Right side of the div */}
     <div
      className={`flex items-center justify-center gap-4 ${isPunching ? 'animate-split2' : ''}`}
     >

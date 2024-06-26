@@ -5,7 +5,7 @@ const Icons = ({ src }) => {
   <img
    src={src}
    alt="icon"
-   className="h-24 w-24 grayscale transition-all duration-300 hover:grayscale-0"
+   className="h-[20vw] w-[20vw] grayscale transition-all duration-300 hover:grayscale-0 md:h-24 md:w-24"
   />
  )
 }

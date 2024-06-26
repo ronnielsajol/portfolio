@@ -9,7 +9,7 @@ const Resume = () => {
   >
    <div className="flex flex-col items-center justify-center">
     {' '}
-    <h1 className="text-5xl font-bold transition-all duration-300 hover:text-accent">
+    <h1 className="text-center text-5xl font-bold transition-all duration-300 hover:text-accent md:text-start">
      CHECK OUT MY RÉSUMÉ!
     </h1>
     <Button
@@ -23,10 +23,10 @@ const Resume = () => {
      </a>
     </Button>
    </div>
-   <div className="group mt-24 flex flex-col items-center justify-center gap-3 rounded-lg border border-transparent p-4 backdrop-blur-md transition-all duration-300 hover:border-white hover:border-opacity-20 hover:bg-primary hover:bg-opacity-40">
+   <div className="group mx-4 mt-24 flex flex-col items-center justify-center gap-3 rounded-lg border border-transparent p-4 backdrop-blur-md transition-all duration-300 hover:border-white hover:border-opacity-20 hover:bg-primary hover:bg-opacity-40 md:mx-0">
     <FiSend className="h-24 w-24 group-hover:text-accent" />
     <h1 className="text-4xl font-medium">GET IN TOUCH!</h1>
-    <p className="mt-2 h-24 w-[500px] text-balance text-center text-xl font-light uppercase">
+    <p className="mt-2 h-24 text-balance text-center text-[4vw] font-light uppercase md:w-[500px] md:text-xl">
      Whether you have an idea for a project or just want to chat, feel free to
      shoot me an email!
     </p>

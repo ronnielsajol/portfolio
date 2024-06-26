@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
- @apply h-[2610px] w-full scroll-smooth bg-background font-sans text-textColor;
+ @apply max-h-full w-full overflow-x-hidden scroll-smooth bg-background font-sans text-textColor;
 }
 
 @layer components {
